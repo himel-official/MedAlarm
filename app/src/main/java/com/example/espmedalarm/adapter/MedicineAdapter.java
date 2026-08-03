@@ -39,15 +39,42 @@ public class MedicineAdapter extends RecyclerView.Adapter<MedicineAdapter.ViewHo
 
         return new ViewHolder(view);
     }
+    private String formatTimesForDisplay(List<String> times) {
 
+        List<String> displayTimes = new java.util.ArrayList<>();
+
+        for (String time : times) {
+            displayTimes.add(formatTimeForDisplay(time));
+        }
+
+        return String.join(", ", displayTimes);
+    }
+
+    private String formatTimeForDisplay(String time24) {
+
+        try {
+
+            java.text.SimpleDateFormat input =
+                    new java.text.SimpleDateFormat("HH:mm", java.util.Locale.getDefault());
+
+            java.text.SimpleDateFormat output =
+                    new java.text.SimpleDateFormat("hh:mm a", java.util.Locale.getDefault());
+
+            return output.format(input.parse(time24));
+
+        } catch (Exception e) {
+
+            return time24;
+
+        }
+    }
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
         Medicine medicine = medicineList.get(position);
 
         holder.txtName.setText(medicine.name + "\nBox " + medicine.boxNumber);
-        holder.txtTime.setText("" + String.join(", ", medicine.times));
-        //holder.txtDuration.setText("" + medicine.duration + " Days");
+        holder.txtTime.setText(formatTimesForDisplay(medicine.times));
         long today = System.currentTimeMillis();
 
         long diff = today - medicine.startDate;
