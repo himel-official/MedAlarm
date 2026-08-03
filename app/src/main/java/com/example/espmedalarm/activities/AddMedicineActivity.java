@@ -108,20 +108,14 @@ public class AddMedicineActivity extends AppCompatActivity {
                     this,
                     (view, hour, minute) -> {
 
-                        Calendar calendar = Calendar.getInstance();
-
-                        calendar.set(Calendar.HOUR_OF_DAY, hour);
-                        calendar.set(Calendar.MINUTE, minute);
-
-                        SimpleDateFormat sdf =
-                                new SimpleDateFormat(
-                                        "hh:mm a",
-                                        Locale.getDefault()
-                                );
-
-                        addTimeButton(
-                                sdf.format(calendar.getTime())
+                        String time24 = String.format(
+                                Locale.getDefault(),
+                                "%02d:%02d",
+                                hour,
+                                minute
                         );
+
+                        addTimeButton(time24);
 
                     },
                     8,
@@ -218,14 +212,31 @@ public class AddMedicineActivity extends AppCompatActivity {
         });
 
     }
+    private String formatTimeForDisplay(String time24) {
 
+        try {
+
+            SimpleDateFormat input =
+                    new SimpleDateFormat("HH:mm", Locale.getDefault());
+
+            SimpleDateFormat output =
+                    new SimpleDateFormat("hh:mm a", Locale.getDefault());
+
+            return output.format(input.parse(time24));
+
+        } catch (Exception e) {
+
+            return time24;
+
+        }
+    }
     private void addTimeButton(String time) {
 
         Button button = new Button(this);
 
         button.setAllCaps(false);
 
-        button.setText("" + time + "   ❌");
+        button.setText(formatTimeForDisplay(time) + "   ❌");
 
         button.setOnClickListener(v -> {
 
