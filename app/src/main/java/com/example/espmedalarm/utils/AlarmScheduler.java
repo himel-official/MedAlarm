@@ -24,11 +24,7 @@ public class AlarmScheduler {
 
         try {
 
-            SimpleDateFormat sdf =
-                    new SimpleDateFormat(
-                            "hh:mm a",
-                            Locale.getDefault()
-                    );
+            SimpleDateFormat sdf = new SimpleDateFormat("HH:mm", Locale.getDefault());
 
             Date date = sdf.parse(time);
 
