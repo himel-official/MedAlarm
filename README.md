@@ -79,7 +79,7 @@ README.md
 
 ## Acknowledgements
 
-This project was developed by **Himel Mahmud** as a learning and engineering project combining Android development with embedded systems.
+This project was developed by **Himel Mahmud ♞** as a learning and engineering project combining Android development with embedded systems.
 
 AI tools, including **Claude** and **ChatGPT**, were used to assist with code generation, debugging, and documentation. All design decisions, integration, testing, and final implementation were completed by the project author.
 
