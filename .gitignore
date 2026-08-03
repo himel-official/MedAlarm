@@ -1,0 +1,25 @@
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Local SDK path
+local.properties
+
+# Android Studio
+.idea/workspace.xml
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+
+# Generated files
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
