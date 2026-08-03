@@ -89,7 +89,7 @@ public class AddMedicineActivity extends AppCompatActivity {
 
             } else {
 
-                addTimeButton("08:00 AM");
+                addTimeButton("08:00");
 
             }
 
@@ -98,7 +98,7 @@ public class AddMedicineActivity extends AppCompatActivity {
         } else {
 
             startDate = System.currentTimeMillis();
-            addTimeButton("08:00 AM");
+            addTimeButton("08:00");
 
         }
 
