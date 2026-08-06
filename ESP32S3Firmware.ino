@@ -24,8 +24,9 @@
  *
  *  REQUIRED LIBRARIES (Library Manager):
  *    - ArduinoJson        (by Benoit Blanchon, v7.x)
- *    - ESP32Servo          (by Kevin Harrington / madhephaestus)
  *    - U8g2                (by oliver)
+ *  (Servos are driven with the ESP32 core's native ledcAttach/ledcWrite LEDC
+ *   API, one independent channel per pin, so no ESP32Servo library needed.)
  *
  *  BOARD:  ESP32S3 Dev Module (N16R8: 16MB flash / 8MB OCTAL PSRAM)
  *  IMPORTANT: N16R8 uses GPIO 33-37 internally for the octal PSRAM.
@@ -57,7 +58,6 @@
 #include <WiFi.h>
 #include <WebServer.h>
 #include <ArduinoJson.h>
-#include <ESP32Servo.h>
 #include <U8g2lib.h>
 #include <Wire.h>
 #include <time.h>
@@ -86,7 +86,7 @@
 #define BUZZER_BEEP_OFF_MS 400
 
 // Servo angles
-#define SERVO_OPEN_ANGLE 90
+#define SERVO_OPEN_ANGLE 180
 #define SERVO_CLOSED_ANGLE 0
 
 // ---------------------------------------------------------------------------
@@ -104,12 +104,30 @@
 #define PIN_LED_BOX4 18
 
 #define PIN_SERVO_BOX1 10
-#define PIN_SERVO_BOX2 11
+#define PIN_SERVO_BOX2 13
 #define PIN_SERVO_BOX3 12
-#define PIN_SERVO_BOX4 13
+#define PIN_SERVO_BOX4 14
 
 const int LED_PINS[4] = { PIN_LED_BOX1, PIN_LED_BOX2, PIN_LED_BOX3, PIN_LED_BOX4 };
 const int SERVO_PINS[4] = { PIN_SERVO_BOX1, PIN_SERVO_BOX2, PIN_SERVO_BOX3, PIN_SERVO_BOX4 };
+
+// ---- SERVO PWM CONFIG (native LEDC, no ESP32Servo library) ----
+// Each servo pin gets its own LEDC channel via ledcAttach(), so boxes move
+// fully independently (avoids the ESP32Servo shared-timer pairing where
+// box1/box3 and box2/box4 would otherwise move together).
+const int SERVO_FREQ_HZ = 50;       // standard servo frequency
+const int SERVO_RES_BITS = 14;      // duty resolution (14-bit gives fine control at 50Hz)
+const int SERVO_MIN_US = 500;       // pulse width at 0 degrees
+const int SERVO_MAX_US = 2400;      // pulse width at 180 degrees
+const uint32_t SERVO_PERIOD_US = 1000000UL / SERVO_FREQ_HZ;  // 20000us
+
+void setServoAngle(int pin, int angleDeg) {
+  angleDeg = constrain(angleDeg, 0, 180);
+  int pulseUs = map(angleDeg, 0, 180, SERVO_MIN_US, SERVO_MAX_US);
+  uint32_t maxDuty = (1UL << SERVO_RES_BITS) - 1;
+  uint32_t duty = (uint32_t)(((uint64_t)pulseUs * maxDuty) / SERVO_PERIOD_US);
+  ledcWrite(pin, duty);
+}
 
 // ---------------------------------------------------------------------------
 // DATA MODEL
@@ -190,7 +208,6 @@ unsigned long lastDisplayMillis = 0;
 // ---------------------------------------------------------------------------
 U8G2_SH1106_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, /* reset=*/U8X8_PIN_NONE);
 WebServer server(80);
-Servo servos[4];
 
 // ---------------------------------------------------------------------------
 // FORWARD DECLARATIONS
@@ -232,14 +249,10 @@ void setup() {
   }
 
   // Servos are externally powered - only the signal line comes from the ESP32
-  ESP32PWM::allocateTimer(0);
-  ESP32PWM::allocateTimer(1);
-  ESP32PWM::allocateTimer(2);
-  ESP32PWM::allocateTimer(3);
   for (int i = 0; i < 4; i++) {
-    servos[i].setPeriodHertz(50);
-    servos[i].attach(SERVO_PINS[i], 500, 2400);
-    servos[i].write(SERVO_CLOSED_ANGLE);
+    // ledcAttach(pin, freq, resolution_bits) — core auto-assigns channel/timer per pin
+    ledcAttach(SERVO_PINS[i], SERVO_FREQ_HZ, SERVO_RES_BITS);
+    setServoAngle(SERVO_PINS[i], SERVO_CLOSED_ANGLE);
   }
 
   Wire.begin(PIN_I2C_SDA, PIN_I2C_SCL);
@@ -446,7 +459,7 @@ void startNextAlarm() {
   int idx = activeBox - 1;
   if (idx >= 0 && idx < 4) {
     digitalWrite(LED_PINS[idx], HIGH);
-    servos[idx].write(SERVO_OPEN_ANGLE);
+    setServoAngle(SERVO_PINS[idx], SERVO_OPEN_ANGLE);
   }
 }
 
@@ -475,7 +488,7 @@ void markSkipped() {
 void closeBox() {
   int idx = activeBox - 1;
   if (idx >= 0 && idx < 4) {
-    servos[idx].write(SERVO_CLOSED_ANGLE);
+    setServoAngle(SERVO_PINS[idx], SERVO_CLOSED_ANGLE);
     digitalWrite(LED_PINS[idx], LOW);
   }
   activeMedIndex = -1;
