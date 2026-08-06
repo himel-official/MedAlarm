@@ -90,7 +90,7 @@
 #define SERVO_CLOSED_ANGLE 0
 
 // ---------------------------------------------------------------------------
-// PIN MAP  (adjust to match your wiring)
+// PIN MAP
 // ---------------------------------------------------------------------------
 #define PIN_I2C_SDA 8
 #define PIN_I2C_SCL 9
