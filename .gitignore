@@ -1,25 +1,25 @@
-# Gradle
+# Android / Gradle
 .gradle/
 build/
-**/build/
-
-# Local SDK path
+app/build/
+*.apk
+*.apk.zip
+*.aar
+*.ap_
+*.aab
 local.properties
-
-# Android Studio
-.idea/workspace.xml
-.idea/caches/
-.idea/libraries/
-.idea/modules.xml
-
-# Generated files
+.idea/
+*.iml
+.DS_Store
 captures/
 .externalNativeBuild/
 .cxx/
 
-# Logs
-*.log
+# Arduino / ESP32
+*.hex
+*.bin
+*.elf
 
-# OS files
-.DS_Store
-Thumbs.db
+# Keep the .idea files that ARE useful to share (optional, remove if you'd rather exclude all of .idea)
+!.idea/codeStyles/
+!.idea/runConfigurations/
