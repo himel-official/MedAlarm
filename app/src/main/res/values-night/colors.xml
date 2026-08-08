@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Same color names as values/colors.xml, aliased to dark-appropriate values.
+         Any layout or style that references these by name (e.g. @color/text_primary)
+         picks up the correct value automatically depending on system day/night mode -
+         nothing else needs to hardcode a light or dark variant. -->
+    <color name="background_light_gray">@color/background_dark</color>
+    <color name="surface_white">@color/surface_dark</color>
+    <color name="surface_outline">@color/surface_dark_outline</color>
+
+    <color name="text_primary">@color/white</color>
+    <color name="text_secondary">#AEB4BA</color>
+</resources>

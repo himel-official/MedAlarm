@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Brand -->
+    <color name="primary">#1565C0</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="primary_light">#E3F2FD</color>
+
+    <color name="accent_green">#2E7D32</color>
+    <color name="accent_green_light">#E8F5E9</color>
+
+    <color name="warning_orange">#F57C00</color>
+    <color name="warning_orange_light">#FFF3E0</color>
+
+    <color name="danger_red">#D32F2F</color>
+    <color name="danger_red_light">#FDECEA</color>
+
+    <!-- Surfaces -->
+    <color name="background_light_gray">#F5F7FA</color>
+    <color name="surface_white">#FFFFFFFF</color>
+    <color name="surface_outline">#E1E4E8</color>
+
+    <!-- Text -->
+    <color name="text_primary">#1A1C1E</color>
+    <color name="text_secondary">#5F6368</color>
+    <color name="text_on_primary">#FFFFFFFF</color>
+    <!-- Fixed dark text for on top of primary_light (the button color used in dark mode).
+         Deliberately NOT aliased in values-night/colors.xml - primary_light is always a
+         light color regardless of mode, so the text on it must always stay dark. -->
+    <color name="text_on_primary_light">#1A1C1E</color>
+
+    <!-- Dark theme surfaces -->
+    <color name="background_dark">#121417</color>
+    <color name="surface_dark">#1D2024</color>
+    <color name="surface_dark_outline">#33363A</color>
+</resources>

@@ -1,0 +1,242 @@
+[
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\color_bottom_nav_item_color.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\color\\bottom_nav_item_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\drawable_ic_wifi.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\drawable\\ic_wifi.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\drawable_ic_medicine.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\drawable\\ic_medicine.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\mipmap-hdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\drawable_bg_box_chip.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\drawable\\bg_box_chip.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\layout_activity_medicine_details.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\layout\\activity_medicine_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\drawable_ic_sync.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\drawable\\ic_sync.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\drawable_ic_profile.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\drawable\\ic_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\mipmap-mdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\drawable_ic_check_circle.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\drawable\\ic_check_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\drawable_ic_wifi_off.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\drawable\\ic_wifi_off.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\drawable_bg_circle_primary.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\drawable\\bg_circle_primary.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\drawable_ic_home.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\drawable\\ic_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\drawable_ic_add.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\drawable\\ic_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\layout_activity_signup.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\layout\\activity_signup.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\layout_fragment_medicines.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\layout\\fragment_medicines.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\drawable_bg_status_active.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\drawable\\bg_status_active.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\layout_item_medicine.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\layout\\item_medicine.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\layout_dialog_add_contact.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\layout\\dialog_add_contact.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\raw_alarm.mp3.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\raw\\alarm.mp3"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\drawable_bg_status_warning.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\drawable\\bg_status_warning.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\drawable_ic_emergency.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\drawable\\ic_emergency.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\layout_activity_alarm.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\layout\\activity_alarm.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\drawable_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\drawable\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\drawable_ic_chevron_right.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\drawable\\ic_chevron_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.espmedalarm.app-debug-50:/layout_activity_login.xml.flat",
+        "source": "com.example.espmedalarm.app-main-52:/layout/activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\drawable_bg_status_expired.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\drawable\\bg_status_expired.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\layout_fragment_emergency.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\layout\\fragment_emergency.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\drawable_bg_circle_light.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\drawable\\bg_circle_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\drawable_ic_box.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\drawable\\ic_box.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\layout_activity_add_medicine.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\layout\\activity_add_medicine.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\layout_item_emergency_contact.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\layout\\item_emergency_contact.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\drawable_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\drawable\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\layout_item_fixed_number.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\layout\\item_fixed_number.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\drawable_divider_row.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\drawable\\divider_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-debug-50:\\layout_row_detail.xml.flat",
+        "source": "C:\\Users\\Himel Mahmud\\.gradle\\daemon\\9.5.0\\com.example.espmedalarm.app-main-52:\\layout\\row_detail.xml"
+    }
+]

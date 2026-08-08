@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Mirrors Base.Theme.ESPMEDALARM in values/themes.xml. Android resolves each
+         color-qualified style completely independently (it does not merge items between
+         the two), so every role has to be restated here - but pointing at the same
+         @color names as the light theme, which now resolve to their dark variants via
+         values-night/colors.xml. Only colorPrimary/colorOnPrimary are a deliberate
+         design difference (a lighter primary reads better on dark surfaces). -->
+    <style name="Base.Theme.ESPMEDALARM" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_light</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/text_on_primary_light</item>
+
+        <item name="colorSecondary">@color/accent_green</item>
+        <item name="colorOnSecondary">@color/text_on_primary</item>
+
+        <item name="colorError">@color/danger_red</item>
+
+        <item name="android:colorBackground">@color/background_light_gray</item>
+        <item name="colorSurface">@color/surface_white</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorOutline">@color/surface_outline</item>
+
+        <item name="android:statusBarColor">@color/surface_white</item>
+        <item name="android:navigationBarColor">@color/surface_white</item>
+    </style>
+
+    <style name="Theme.ESPMEDALARM" parent="Base.Theme.ESPMEDALARM" />
+</resources>

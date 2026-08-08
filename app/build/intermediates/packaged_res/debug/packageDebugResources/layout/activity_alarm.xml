@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time to Take Medicine"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:id="@+id/txtMedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medicine Name"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/txtBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Box 1"
+        android:textSize="20sp"
+        android:layout_marginBottom="50dp"/>
+
+    <Button
+        android:id="@+id/btnTaken"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="✓ TAKEN"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnSnooze"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="SNOOZE 10 MIN"
+        android:textAllCaps="false"
+        android:textSize="18sp"/>
+
+</LinearLayout>
