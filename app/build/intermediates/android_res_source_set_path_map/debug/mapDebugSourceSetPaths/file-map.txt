@@ -1,9 +1,0 @@
-com.example.espmedalarm.app-pngs-0 D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\build\generated\res\pngs\debug
-com.example.espmedalarm.app-res-1 D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\build\generated\res\processDebugGoogleServices
-com.example.espmedalarm.app-updated_navigation_xml-2 D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\build\generated\updated_navigation_xml\debug
-com.example.espmedalarm.app-packageDebugResources-3 D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.espmedalarm.app-packageDebugResources-4 D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.espmedalarm.app-debug-5 D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.example.espmedalarm.app-debug-6 D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\debug\res
-com.example.espmedalarm.app-main-7 D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\res
-gradleHome-0 C:\Users\Himel Mahmud\.gradle
