@@ -19,6 +19,10 @@ import com.google.android.material.button.MaterialButton;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
+/**
+ * Read-only details view for a single medicine, backed by Firestore
+ * (MedicineRepository) - no changes to the ESP32 sync protocol.
+ */
 public class MedicineDetailsActivity extends AppCompatActivity {
 
     private final MedicineRepository medicineRepository = new MedicineRepository();

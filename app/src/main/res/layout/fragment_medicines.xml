@@ -32,7 +32,6 @@
         android:layout_marginEnd="20dp"
         android:contentDescription="Sync device"
         app:icon="@drawable/ic_sync"
-        android:text="Sync "
         app:iconGravity="textStart"
         app:iconPadding="0dp"
         app:iconTint="@color/primary"

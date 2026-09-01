@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light_gray"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp">
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="64dp"
+            android:src="@android:drawable/ic_lock_idle_lock"
+            android:contentDescription="Admin Panel"
+            app:tint="@color/primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Admin Panel"
+            android:textAppearance="@style/Text.Headline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Enter the admin password to continue"
+            android:textAppearance="@style/Text.Body" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:passwordToggleEnabled="true"
+            android:hint="Admin Password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAdminPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAdminEnter"
+            style="@style/Widget.App.Button"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:text="Enter"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

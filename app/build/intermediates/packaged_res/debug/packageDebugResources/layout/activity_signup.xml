@@ -18,9 +18,9 @@
             android:layout_width="72dp"
             android:layout_height="72dp"
             android:layout_marginTop="48dp"
-            android:src="@drawable/ic_launcher_round"
-            android:contentDescription="ESPMEDALARM" />
-        <!--app:tint="@color/primary"  -->
+            android:src="@drawable/ic_launcher"
+            android:contentDescription="ESPMEDALARM"
+            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -28,6 +28,13 @@
             android:layout_marginTop="16dp"
             android:text="Create Account"
             android:textAppearance="@style/Text.Headline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Sign up to start tracking your medicines"
+            android:textAppearance="@style/Text.Body" />
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.Material3.TextInputLayout.OutlinedBox"

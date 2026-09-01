@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.espmedalarm.R;
+import com.example.espmedalarm.activities.AdminLoginActivity;
 import com.example.espmedalarm.activities.LoginActivity;
 import com.google.android.material.button.MaterialButton;
 import com.google.firebase.auth.FirebaseAuth;
@@ -38,9 +39,13 @@ public class ProfileFragment extends Fragment {
 
         TextView txtEmail = view.findViewById(R.id.txtEmail);
         MaterialButton btnLogout = view.findViewById(R.id.btnLogout);
+        MaterialButton btnAdminPanel = view.findViewById(R.id.btnAdminPanel);
 
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         txtEmail.setText(user != null && user.getEmail() != null ? user.getEmail() : "Signed in");
+
+        btnAdminPanel.setOnClickListener(v ->
+                startActivity(new Intent(requireContext(), AdminLoginActivity.class)));
 
         btnLogout.setOnClickListener(v -> {
             FirebaseAuth.getInstance().signOut();

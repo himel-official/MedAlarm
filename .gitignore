@@ -1,25 +1,17 @@
-# Android / Gradle
-.gradle/
-build/
-app/build/
-*.apk
-*.apk.zip
-*.aar
-*.ap_
-*.aab
-local.properties
-.idea/
 *.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
 .DS_Store
-captures/
-.externalNativeBuild/
-.cxx/
-
-# Arduino / ESP32
-*.hex
-*.bin
-*.elf
-
-# Keep the .idea files that ARE useful to share (optional, remove if you'd rather exclude all of .idea)
-!.idea/codeStyles/
-!.idea/runConfigurations/
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+/app/build
+ 

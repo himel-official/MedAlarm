@@ -23,6 +23,12 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Locale;
 
+/**
+ * Add/Edit Medicine screen. Same AlarmScheduler calls as before - only the
+ * storage backend changed from the local Room database to Firestore
+ * (via MedicineRepository), so medicines are backed up per-account and
+ * survive app uninstall/reinstall.
+ */
 public class AddMedicineActivity extends AppCompatActivity {
 
     private boolean isEditMode = false;

@@ -15,6 +15,7 @@ import android.os.Looper;
 import android.os.PowerManager;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
+import android.os.VibratorManager;
 
 import androidx.core.app.NotificationCompat;
 
@@ -128,21 +129,41 @@ public class AlarmService extends Service {
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
 
-                mediaPlayer.setAudioAttributes(
+                AudioAttributes.Builder audioAttrsBuilder =
                         new AudioAttributes.Builder()
                                 .setUsage(AudioAttributes.USAGE_ALARM)
-                                .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
-                                .build()
+                                .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC);
+
+                // Force the alarm to be audible even if the device is on
+                // silent / vibrate-only / a Do Not Disturb or focus mode.
+                audioAttrsBuilder.setFlags(
+                        AudioAttributes.FLAG_AUDIBILITY_ENFORCED
                 );
+
+                mediaPlayer.setAudioAttributes(audioAttrsBuilder.build());
             }
 
             mediaPlayer.setLooping(true);
             mediaPlayer.start();
         }
 
-        // Start vibration
-        vibrator =
-                (Vibrator) getSystemService(VIBRATOR_SERVICE);
+        // Start vibration (every kind: repeating pattern, max amplitude,
+        // resolved through the modern VibratorManager on Android 12+ so it
+        // keeps firing regardless of ringer/DND/focus mode).
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+
+            VibratorManager vibratorManager =
+                    (VibratorManager) getSystemService(VIBRATOR_MANAGER_SERVICE);
+
+            vibrator = (vibratorManager != null)
+                    ? vibratorManager.getDefaultVibrator()
+                    : null;
+
+        } else {
+
+            vibrator =
+                    (Vibrator) getSystemService(VIBRATOR_SERVICE);
+        }
 
         if (vibrator != null && vibrator.hasVibrator()) {
 
@@ -157,12 +178,32 @@ public class AlarmService extends Service {
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 
-                vibrator.vibrate(
-                        VibrationEffect.createWaveform(
-                                pattern,
-                                0
-                        )
-                );
+                int[] amplitudes = {
+                        0,
+                        VibrationEffect.DEFAULT_AMPLITUDE,
+                        0,
+                        VibrationEffect.DEFAULT_AMPLITUDE,
+                        0,
+                        VibrationEffect.DEFAULT_AMPLITUDE
+                };
+
+                VibrationEffect effect = vibrator.hasAmplitudeControl()
+                        ? VibrationEffect.createWaveform(pattern, amplitudes, 0)
+                        : VibrationEffect.createWaveform(pattern, 0);
+
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O_MR1) {
+
+                    AudioAttributes vibrationAttrs =
+                            new AudioAttributes.Builder()
+                                    .setUsage(AudioAttributes.USAGE_ALARM)
+                                    .build();
+
+                    vibrator.vibrate(effect, vibrationAttrs);
+
+                } else {
+
+                    vibrator.vibrate(effect);
+                }
 
             } else {
 
@@ -193,6 +234,11 @@ public class AlarmService extends Service {
                     );
 
             channel.enableVibration(true);
+
+            // Let this channel ring/vibrate through Do Not Disturb and
+            // Focus modes (requires the user to have granted DND access,
+            // requested from MainActivity).
+            channel.setBypassDnd(true);
 
             NotificationManager manager =
                     getSystemService(

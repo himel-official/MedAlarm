@@ -15,6 +15,12 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+
+    <!-- Needed so the medicine alarm can bypass Do Not Disturb -->
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+
+    <!-- Needed so the alarm page can full-screen launch over lock screen / DND on Android 14+ -->
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
@@ -23,6 +29,13 @@
          so the Home screen can confirm the phone is on MedAlarm-Setup
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--
+         Used by the Emergency tab's live map preview to center on the
+         device's current location (falls back to this if fine/GPS location
+         isn't available).
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
@@ -42,7 +55,6 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.ESPMEDALARM"
         android:usesCleartextTraffic="true" >
 
@@ -82,6 +94,14 @@
         <!-- Signup -->
         <activity
             android:name="com.example.espmedalarm.activities.SignupActivity"
+            android:exported="false" />
+
+        <!-- Admin Panel (password-gated) -->
+        <activity
+            android:name="com.example.espmedalarm.activities.AdminLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.espmedalarm.activities.AdminPanelActivity"
             android:exported="false" />
 
         <!-- Alarm Receiver -->

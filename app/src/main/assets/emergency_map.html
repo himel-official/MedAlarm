@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        html, body, #map { height: 100%; margin: 0; padding: 0; background: #E1E4E8; }
+        .status-banner {
+            position: absolute; left: 8px; top: 8px; z-index: 999;
+            background: rgba(255,255,255,0.92); color: #5F6368;
+            font: 12px -apple-system, Roboto, sans-serif;
+            padding: 4px 10px; border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+        .leaflet-popup-content { font: 13px -apple-system, Roboto, sans-serif; }
+    </style>
+</head>
+<body>
+<div id="status" class="status-banner">Waiting for location…</div>
+<div id="map"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    var map = L.map('map', { zoomControl: false, attributionControl: false }).setView([23.8103, 90.4125], 14);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19
+    }).addTo(map);
+
+    var meMarker = null;
+    var hospitalMarkers = [];
+    var pharmacyMarkers = [];
+    var lastLat = null, lastLng = null;
+
+    function setStatus(text) {
+        var el = document.getElementById('status');
+        if (el) el.textContent = text;
+    }
+
+    function clearMarkers(list) {
+        for (var i = 0; i < list.length; i++) { map.removeLayer(list[i]); }
+        return [];
+    }
+
+    // Called from the Android app once GPS coordinates are available.
+    function setLocation(lat, lng) {
+        lastLat = lat; lastLng = lng;
+        map.setView([lat, lng], 15);
+
+        if (meMarker) { map.removeLayer(meMarker); }
+        meMarker = L.circleMarker([lat, lng], {
+            radius: 8, color: '#FFFFFF', weight: 2,
+            fillColor: '#1565C0', fillOpacity: 1
+        }).addTo(map).bindPopup('You are here');
+
+        setStatus('Loading nearby places…');
+        fetchNearby(lat, lng);
+    }
+
+    function fetchNearby(lat, lng) {
+        var radius = 3000; // meters
+        var query = '[out:json][timeout:15];(' +
+            'node["amenity"="hospital"](around:' + radius + ',' + lat + ',' + lng + ');' +
+            'node["amenity"="pharmacy"](around:' + radius + ',' + lat + ',' + lng + ');' +
+            ');out center 25;';
+
+        fetch('https://overpass-api.de/api/interpreter', {
+            method: 'POST',
+            body: 'data=' + encodeURIComponent(query)
+        })
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+            hospitalMarkers = clearMarkers(hospitalMarkers);
+            pharmacyMarkers = clearMarkers(pharmacyMarkers);
+
+            var elements = data.elements || [];
+            for (var i = 0; i < elements.length; i++) {
+                var el = elements[i];
+                var name = (el.tags && el.tags.name) ? el.tags.name : null;
+                var isHospital = el.tags && el.tags.amenity === 'hospital';
+
+                var marker = L.circleMarker([el.lat, el.lon], {
+                    radius: 7, weight: 2, color: '#FFFFFF',
+                    fillColor: isHospital ? '#D32F2F' : '#2E7D32',
+                    fillOpacity: 1
+                }).addTo(map).bindPopup(name || (isHospital ? 'Hospital' : 'Medical Store'));
+
+                if (isHospital) { hospitalMarkers.push(marker); } else { pharmacyMarkers.push(marker); }
+            }
+
+            setStatus(hospitalMarkers.length + ' hospitals · ' + pharmacyMarkers.length + ' medical stores nearby');
+        })
+        .catch(function () {
+            setStatus('Could not load nearby places');
+        });
+    }
+
+    // Called from the "Hospitals" / "Medical Stores" buttons to pan the
+    // small preview to that category, if any results are loaded.
+    function focusCategory(category) {
+        var list = category === 'hospital' ? hospitalMarkers : pharmacyMarkers;
+        if (!list.length) { return; }
+        var group = L.featureGroup(list);
+        map.fitBounds(group.getBounds().pad(0.3));
+    }
+
+    function getLastLocation() {
+        return lastLat !== null ? (lastLat + ',' + lastLng) : null;
+    }
+</script>
+</body>
+</html>

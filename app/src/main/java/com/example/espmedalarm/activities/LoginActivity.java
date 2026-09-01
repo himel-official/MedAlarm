@@ -8,13 +8,21 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.espmedalarm.R;
+import com.example.espmedalarm.database.UserRepository;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
+/**
+ * Entry point / launcher activity. Shows an email + password sign-in form.
+ * If a Firebase session already exists (e.g. app was reopened without
+ * logging out), skips straight to MainActivity.
+ */
 public class LoginActivity extends AppCompatActivity {
 
     private FirebaseAuth auth;
+    private final UserRepository userRepository = new UserRepository();
 
     private TextInputEditText etEmail, etPassword;
     private MaterialButton btnLogin;
@@ -24,13 +32,12 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         auth = FirebaseAuth.getInstance();
+        setContentView(R.layout.activity_login);
 
         if (auth.getCurrentUser() != null) {
-            goToMain();
+            checkNotDisabledThenGoToMain(auth.getCurrentUser());
             return;
         }
-
-        setContentView(R.layout.activity_login);
 
         etEmail = findViewById(R.id.etEmail);
         etPassword = findViewById(R.id.etPassword);
@@ -59,7 +66,14 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setEnabled(false);
 
         auth.signInWithEmailAndPassword(email, password)
-                .addOnSuccessListener(result -> goToMain())
+                .addOnSuccessListener(result -> {
+                    FirebaseUser user = result.getUser();
+                    if (user != null) {
+                        userRepository.recordLogin(user.getUid(),
+                                user.getEmail() != null ? user.getEmail() : "");
+                    }
+                    checkNotDisabledThenGoToMain(user);
+                })
                 .addOnFailureListener(e -> {
                     btnLogin.setEnabled(true);
                     Toast.makeText(
@@ -68,6 +82,25 @@ public class LoginActivity extends AppCompatActivity {
                             Toast.LENGTH_LONG
                     ).show();
                 });
+    }
+
+    /** Blocks sign-in if an admin has removed this account (see AdminPanelActivity). */
+    private void checkNotDisabledThenGoToMain(FirebaseUser user) {
+        if (user == null) {
+            goToMain();
+            return;
+        }
+
+        userRepository.checkDisabled(user.getUid(), disabled -> {
+            if (disabled) {
+                auth.signOut();
+                if (btnLogin != null) btnLogin.setEnabled(true);
+                Toast.makeText(this,
+                        "This account has been disabled by an admin.", Toast.LENGTH_LONG).show();
+            } else {
+                goToMain();
+            }
+        });
     }
 
     private void goToMain() {

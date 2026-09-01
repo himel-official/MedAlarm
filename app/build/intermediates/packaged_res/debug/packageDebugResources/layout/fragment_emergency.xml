@@ -102,6 +102,79 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
+        <!-- Live map preview: current location + nearby hospitals & medical
+             stores together. Tapping "View Bigger Map" opens Google Maps
+             externally with the same current location + hospitals + medical
+             stores search. -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.App.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <WebView
+                        android:id="@+id/webMapPreview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/txtMapPermissionNeeded"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_light_gray"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="Enable location access to see the live map"
+                        android:textAppearance="@style/Text.Body"
+                        android:visibility="gone"
+                        tools:visibility="gone" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/surface_outline" />
+
+                <LinearLayout
+                    android:id="@+id/btnViewBiggerMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="View Bigger Map"
+                        android:textAppearance="@style/Text.Title"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:contentDescription="Open"
+                        android:src="@drawable/ic_chevron_right"
+                        app:tint="@color/text_secondary" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
         <!-- Emergency contacts -->
         <LinearLayout
             android:layout_width="match_parent"

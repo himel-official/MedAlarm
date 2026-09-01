@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light_gray"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="32dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="20dp"
+            android:paddingHorizontal="8dp">
+
+            <ImageButton
+                android:id="@+id/btnAdminBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Back"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                app:tint="@color/text_primary" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:text="Admin Panel"
+                android:textAppearance="@style/Text.Headline" />
+        </LinearLayout>
+
+        <!-- Stats -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.App.Card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/txtTotalUsers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/Text.Headline"
+                        tools:text="12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Total Users"
+                        android:textAppearance="@style/Text.Body" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.App.Card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/txtActiveUsers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/Text.Headline"
+                        android:textColor="@color/accent_green"
+                        tools:text="5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Active (24h)"
+                        android:textAppearance="@style/Text.Body" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <!-- Emergency numbers management -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Emergency Numbers"
+                android:textAppearance="@style/Text.Title" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddNumber"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                app:icon="@android:drawable/ic_menu_add" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtNumbersEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:text="No custom numbers set - showing defaults"
+            android:textAppearance="@style/Text.Body"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerAdminNumbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:nestedScrollingEnabled="false"
+            tools:listitem="@layout/item_admin_number" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveNumbers"
+            style="@style/Widget.App.Button"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Save Changes" />
+
+        <!-- Registered users -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="28dp"
+            android:text="Registered Users"
+            android:textAppearance="@style/Text.Title" />
+
+        <TextView
+            android:id="@+id/txtUsersEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:text="No registered users yet"
+            android:textAppearance="@style/Text.Body"
+            android:visibility="gone"
+            tools:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerAdminUsers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:nestedScrollingEnabled="false"
+            tools:listitem="@layout/item_admin_user" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
