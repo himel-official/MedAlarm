@@ -2,45 +2,50 @@ package com.example.espmedalarm.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.espmedalarm.R;
-import com.google.android.material.button.MaterialButton;
-import com.google.android.material.textfield.TextInputEditText;
+import com.example.espmedalarm.database.AdminRepository;
+import com.google.firebase.auth.FirebaseAuth;
 
+/**
+ * Access to the Admin Panel is tied to the account that's already logged
+ * into the app: whoever's Firebase Auth uid has a document at
+ * admins/{uid} in Firestore gets in, no separate admin password needed.
+ * Different admins are simply different documents in that collection.
+ */
 public class AdminLoginActivity extends AppCompatActivity {
 
-    private static final String ADMIN_PASSWORD = "20245103282";
-
-    private TextInputEditText etAdminPassword;
+    private final AdminRepository adminRepository = new AdminRepository();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_login);
 
-        etAdminPassword = findViewById(R.id.etAdminPassword);
-        MaterialButton btnAdminEnter = findViewById(R.id.btnAdminEnter);
-
-        btnAdminEnter.setOnClickListener(v -> attemptEnter());
+        checkAdminAccess();
     }
 
-    private void attemptEnter() {
-        String entered = etAdminPassword.getText() != null
-                ? etAdminPassword.getText().toString().trim() : "";
+    private void checkAdminAccess() {
+        String uid = FirebaseAuth.getInstance().getCurrentUser() != null
+                ? FirebaseAuth.getInstance().getCurrentUser().getUid()
+                : null;
 
-        if (TextUtils.isEmpty(entered)) {
-            etAdminPassword.setError("Enter the admin password");
+        if (uid == null) {
+            Toast.makeText(this, "You need to be logged in", Toast.LENGTH_SHORT).show();
+            finish();
             return;
         }
 
-        if (ADMIN_PASSWORD.equals(entered)) {
-            startActivity(new Intent(this, AdminPanelActivity.class));
+        adminRepository.isAdmin(uid, isAdmin -> {
+            if (isAdmin) {
+                startActivity(new Intent(this, AdminPanelActivity.class));
+            } else {
+                Toast.makeText(this, "You don't have admin access", Toast.LENGTH_SHORT).show();
+            }
             finish();
-        } else {
-            etAdminPassword.setError("Incorrect password");
-        }
+        });
     }
 }

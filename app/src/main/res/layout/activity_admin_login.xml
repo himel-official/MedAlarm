@@ -33,32 +33,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Enter the admin password to continue"
+            android:text="Checking admin access..."
             android:textAppearance="@style/Text.Body" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
+        <ProgressBar
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            app:passwordToggleEnabled="true"
-            android:hint="Admin Password">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etAdminPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="numberPassword" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnAdminEnter"
-            style="@style/Widget.App.Button"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_marginTop="24dp"
-            android:text="Enter"
-            android:textSize="16sp" />
+            android:layout_marginTop="24dp" />
 
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

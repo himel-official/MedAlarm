@@ -24,7 +24,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Password-protected admin screen (reached via AdminLoginActivity):
+ * Admin screen reached via AdminLoginActivity, which checks that the
+ * currently logged-in account's uid has a document at admins/{uid}:
  *  - total / active (last 24h) user counts
  *  - add/edit/delete the Emergency Numbers list shown on the Emergency tab
  *  - view registered users and remove (disable) their access

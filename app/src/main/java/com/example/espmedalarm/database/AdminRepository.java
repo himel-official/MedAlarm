@@ -46,6 +46,10 @@ public class AdminRepository {
         void onError(String message);
     }
 
+    public interface AdminCheckCallback {
+        void onResult(boolean isAdmin);
+    }
+
     public interface NumbersCallback {
         void onSuccess(List<FixedEmergencyNumbers.Entry> numbers);
         void onError(String message);
@@ -55,6 +59,17 @@ public class AdminRepository {
     private static final long ACTIVE_WINDOW_MILLIS = 24L * 60 * 60 * 1000;
 
     private final FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+    /**
+     * Checks whether the given (currently logged-in) Firebase Auth uid has
+     * an admin document at admins/{uid}. Different admins are simply
+     * different documents in this collection - no shared password needed.
+     */
+    public void isAdmin(@NonNull String uid, @NonNull AdminCheckCallback callback) {
+        db.collection("admins").document(uid).get()
+                .addOnSuccessListener(doc -> callback.onResult(doc.exists()))
+                .addOnFailureListener(e -> callback.onResult(false));
+    }
 
     public void getAllUsers(@NonNull UsersCallback callback) {
         db.collection("users")

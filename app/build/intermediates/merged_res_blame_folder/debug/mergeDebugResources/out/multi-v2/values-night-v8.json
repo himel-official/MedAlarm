@@ -4,23 +4,6 @@
             "outputFile": "com.example.espmedalarm.app-mergeDebugResources-48:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "D:\\1. Projects\\192026\\ESPMEDALARM_v3_dnd_vibration\\ESPMEDALARM\\app\\src\\main\\res\\values-night\\colors.xml",
-                    "from": {
-                        "startLines": "6,8,7,10,11",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "381,512,452,583,635",
-                        "endColumns": "70,69,59,51,48",
-                        "endOffsets": "447,577,507,630,679"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "55,126,196,256,308",
-                        "endColumns": "70,69,59,51,48",
-                        "endOffsets": "121,191,251,303,352"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Himel Mahmud\\.gradle\\caches\\9.5.0\\transforms\\d9d4baa02df5e4b9cb4fe72975183548\\transformed\\appcompat-1.7.1\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "D:\\1. Projects\\192026\\ESPMEDALARM_v3_dnd_vibration\\ESPMEDALARM\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "D:\\Himel Mahmud\\Music\\192026adminnopass\\ESPMEDALARM_v3_admin_by_account\\ESPMEDALARM\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "7,28",
                         "startColumns": "4,4",
@@ -71,6 +54,23 @@
                         "startOffsets": "2110,2185,2296,2385,2486,2609,2720,2827,2956,3063,3160,3259,3380,3487,3590,3715,3842,3991,4086,4195,4316,4459,4590,4717,4866,4993,5110,5229,5370,5493,5638,5785,5954,6042,6166,6268,6370,6486,6610,6712,6826,6954,7090,7206,7328,7464,7608,7732,7852,7986,8128,8248,8358,8470,8596,8819,8936,9073,9197,9327,9449,9587,9721,9837",
                         "endColumns": "74,110,88,100,122,110,106,128,106,96,98,120,106,102,124,126,148,94,108,120,142,130,126,148,126,116,118,140,122,144,146,168,87,123,101,101,115,123,101,113,127,135,115,121,135,143,123,119,133,141,119,109,111,125,133,116,136,123,129,121,137,133,115,119",
                         "endOffsets": "2180,2291,2380,2481,2604,2715,2822,2951,3058,3155,3254,3375,3482,3585,3710,3837,3986,4081,4190,4311,4454,4585,4712,4861,4988,5105,5224,5365,5488,5633,5780,5949,6037,6161,6263,6365,6481,6605,6707,6821,6949,7085,7201,7323,7459,7603,7727,7847,7981,8123,8243,8353,8465,8591,8725,8931,9068,9192,9322,9444,9582,9716,9832,9952"
+                    }
+                },
+                {
+                    "source": "D:\\Himel Mahmud\\Music\\192026adminnopass\\ESPMEDALARM_v3_admin_by_account\\ESPMEDALARM\\app\\src\\main\\res\\values-night\\colors.xml",
+                    "from": {
+                        "startLines": "6,8,7,10,11",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "381,512,452,583,635",
+                        "endColumns": "70,69,59,51,48",
+                        "endOffsets": "447,577,507,630,679"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,126,196,256,308",
+                        "endColumns": "70,69,59,51,48",
+                        "endOffsets": "121,191,251,303,352"
                     }
                 }
             ]

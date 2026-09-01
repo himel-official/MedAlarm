@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:2:1-108:12
-INJECTED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:2:1-108:12
-INJECTED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:2:1-108:12
-INJECTED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:2:1-108:12
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:2:1-108:12
+INJECTED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:2:1-108:12
+INJECTED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:2:1-108:12
+INJECTED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:2:1-108:12
 MERGED from [com.google.android.material:material:1.14.0] C:\Users\Himel Mahmud\.gradle\caches\9.5.0\transforms\34e59b5d7a664907255f2bae71882062\transformed\material-1.14.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\Himel Mahmud\.gradle\caches\9.5.0\transforms\9721b061dcb407e67e0fba53b28c80be\transformed\constraintlayout-2.2.1\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.1] C:\Users\Himel Mahmud\.gradle\caches\9.5.0\transforms\55d82426f4f28d9adea9f442eb112241\transformed\appcompat-resources-1.7.1\AndroidManifest.xml:2:1-7:12
@@ -76,47 +76,47 @@ MERGED from [io.grpc:grpc-android:1.62.2] C:\Users\Himel Mahmud\.gradle\caches\9
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\Himel Mahmud\.gradle\caches\9.5.0\transforms\0f6eada17489ae068b27daeaacca828a\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\Himel Mahmud\.gradle\caches\9.5.0\transforms\ffb446c3833da82cdc08042dd316b4bb\transformed\core-common-2.0.3\AndroidManifest.xml:2:1-21:12
 	package
-		INJECTED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.SCHEDULE_EXACT_ALARM
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:5:5-78
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:5:5-78
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:5:22-76
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:5:22-76
 uses-permission#android.permission.VIBRATE
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:6:5-65
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:6:5-65
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:6:22-63
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:6:22-63
 uses-permission#android.permission.WAKE_LOCK
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:7:5-67
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:7:5-67
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:7:22-65
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:7:22-65
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:8:5-76
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:8:5-76
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:8:22-74
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:8:22-74
 uses-permission#android.permission.POST_NOTIFICATIONS
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:9:5-76
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:9:5-76
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:9:22-74
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:9:22-74
 uses-permission#android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:10:5-91
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:10:5-91
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:10:22-89
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:10:22-89
 uses-permission#android.permission.ACCESS_NOTIFICATION_POLICY
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:13:5-84
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:13:5-84
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:13:22-82
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:13:22-82
 uses-permission#android.permission.USE_FULL_SCREEN_INTENT
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:16:5-80
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:16:5-80
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:16:22-78
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:16:22-78
 uses-permission#android.permission.INTERNET
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:18:5-19:54
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:18:5-19:54
 MERGED from [com.google.firebase:firebase-auth:23.1.0] C:\Users\Himel Mahmud\.gradle\caches\9.5.0\transforms\0990968446d8aacb679abd943253eee4\transformed\firebase-auth-23.1.0\AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-auth:23.1.0] C:\Users\Himel Mahmud\.gradle\caches\9.5.0\transforms\0990968446d8aacb679abd943253eee4\transformed\firebase-auth-23.1.0\AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-firestore:25.1.1] C:\Users\Himel Mahmud\.gradle\caches\9.5.0\transforms\d284aaf3c58b8d6b4ec91a8ba511d33e\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:11:5-67
@@ -124,26 +124,26 @@ MERGED from [com.google.firebase:firebase-firestore:25.1.1] C:\Users\Himel Mahmu
 MERGED from [com.google.android.recaptcha:recaptcha:18.5.1] C:\Users\Himel Mahmud\.gradle\caches\9.5.0\transforms\9dba793ee22f69380eea071681d00f42\transformed\recaptcha-18.5.1\AndroidManifest.xml:7:5-67
 MERGED from [com.google.android.recaptcha:recaptcha:18.5.1] C:\Users\Himel Mahmud\.gradle\caches\9.5.0\transforms\9dba793ee22f69380eea071681d00f42\transformed\recaptcha-18.5.1\AndroidManifest.xml:7:5-67
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:19:9-51
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:19:9-51
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:21:5-22:63
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:21:5-22:63
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:22:9-60
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:22:9-60
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:26:5-27:66
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:26:5-27:66
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:27:9-63
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:27:9-63
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:32:5-33:68
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:32:5-33:68
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:33:9-65
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:33:9-65
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:35:5-36:63
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:35:5-36:63
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:36:9-60
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:36:9-60
 application
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:37:5-106:19
-INJECTED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:37:5-106:19
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:37:5-106:19
+INJECTED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:37:5-106:19
 MERGED from [com.google.android.material:material:1.14.0] C:\Users\Himel Mahmud\.gradle\caches\9.5.0\transforms\34e59b5d7a664907255f2bae71882062\transformed\material-1.14.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.14.0] C:\Users\Himel Mahmud\.gradle\caches\9.5.0\transforms\34e59b5d7a664907255f2bae71882062\transformed\material-1.14.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\Himel Mahmud\.gradle\caches\9.5.0\transforms\9721b061dcb407e67e0fba53b28c80be\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
@@ -189,105 +189,105 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Himel Mahmud\.grad
 MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\Himel Mahmud\.gradle\caches\9.5.0\transforms\ffb446c3833da82cdc08042dd316b4bb\transformed\core-common-2.0.3\AndroidManifest.xml:11:5-19:19
 MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\Himel Mahmud\.gradle\caches\9.5.0\transforms\ffb446c3833da82cdc08042dd316b4bb\transformed\core-common-2.0.3\AndroidManifest.xml:11:5-19:19
 	android:extractNativeLibs
-		INJECTED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.18.0] C:\Users\Himel Mahmud\.gradle\caches\9.5.0\transforms\79f9f72923fec94c246711f47bc5a9bb\transformed\core-1.18.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:42:9-35
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:42:9-35
 	android:label
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:40:9-41
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:40:9-41
 	android:roundIcon
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:41:9-54
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:41:9-54
 	android:icon
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:39:9-43
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:39:9-43
 	android:allowBackup
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:38:9-35
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:38:9-35
 	android:theme
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:44:9-49
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:44:9-49
 	android:usesCleartextTraffic
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:43:9-44
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:43:9-44
 activity#com.example.espmedalarm.activities.AlarmActivity
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:47:9-51:43
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:47:9-51:43
 	android:turnScreenOn
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:51:13-40
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:51:13-40
 	android:exported
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:49:13-37
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:49:13-37
 	android:showOnLockScreen
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:50:13-44
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:50:13-44
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:48:13-53
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:48:13-53
 activity#com.example.espmedalarm.activities.AddMedicineActivity
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:54:9-56:40
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:54:9-56:40
 	android:exported
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:56:13-37
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:56:13-37
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:55:13-59
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:55:13-59
 activity#com.example.espmedalarm.activities.MedicineDetailsActivity
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:59:9-61:40
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:59:9-61:40
 	android:exported
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:61:13-37
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:61:13-37
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:60:13-63
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:60:13-63
 activity#com.example.espmedalarm.activities.MainActivity
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:64:9-66:40
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:64:9-66:40
 	android:exported
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:66:13-37
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:66:13-37
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:65:13-52
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:65:13-52
 activity#com.example.espmedalarm.activities.LoginActivity
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:69:9-78:20
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:69:9-78:20
 	android:exported
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:71:13-36
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:71:13-36
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:70:13-53
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:70:13-53
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:73:13-76:29
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:73:13-76:29
 action#android.intent.action.MAIN
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:74:17-68
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:74:17-68
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:74:25-66
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:74:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:75:17-76
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:75:17-76
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:75:27-74
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:75:27-74
 activity#com.example.espmedalarm.activities.SignupActivity
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:81:9-83:40
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:81:9-83:40
 	android:exported
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:83:13-37
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:83:13-37
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:82:13-54
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:82:13-54
 activity#com.example.espmedalarm.activities.AdminLoginActivity
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:86:9-88:40
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:86:9-88:40
 	android:exported
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:88:13-37
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:88:13-37
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:87:13-58
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:87:13-58
 activity#com.example.espmedalarm.activities.AdminPanelActivity
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:90:9-92:40
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:90:9-92:40
 	android:exported
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:92:13-37
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:92:13-37
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:91:13-58
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:91:13-58
 receiver#com.example.espmedalarm.receiver.AlarmReceiver
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:95:9-97:40
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:95:9-97:40
 	android:exported
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:97:13-37
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:97:13-37
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:96:13-51
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:96:13-51
 service#com.example.espmedalarm.service.AlarmService
-ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:100:9-104:60
+ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:100:9-104:60
 	android:enabled
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:102:13-35
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:102:13-35
 	android:exported
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:103:13-37
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:103:13-37
 	android:foregroundServiceType
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:104:13-58
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:104:13-58
 	android:name
-		ADDED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml:101:13-49
+		ADDED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml:101:13-49
 uses-sdk
-INJECTED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml
-INJECTED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml
+INJECTED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml
+INJECTED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml
 MERGED from [com.google.android.material:material:1.14.0] C:\Users\Himel Mahmud\.gradle\caches\9.5.0\transforms\34e59b5d7a664907255f2bae71882062\transformed\material-1.14.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.14.0] C:\Users\Himel Mahmud\.gradle\caches\9.5.0\transforms\34e59b5d7a664907255f2bae71882062\transformed\material-1.14.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\Himel Mahmud\.gradle\caches\9.5.0\transforms\9721b061dcb407e67e0fba53b28c80be\transformed\constraintlayout-2.2.1\AndroidManifest.xml:5:5-44
@@ -433,9 +433,9 @@ MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\Himel Mahmud\.g
 	tools:overrideLibrary
 		ADDED from [com.google.firebase:firebase-auth:23.1.0] C:\Users\Himel Mahmud\.gradle\caches\9.5.0\transforms\0990968446d8aacb679abd943253eee4\transformed\firebase-auth-23.1.0\AndroidManifest.xml:23:9-148
 	android:targetSdkVersion
-		INJECTED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\1. Projects\192026\ESPMEDALARM_v3_dnd_vibration\ESPMEDALARM\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Himel Mahmud\Music\192026adminnopass\ESPMEDALARM_v3_admin_by_account\ESPMEDALARM\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:23.1.0] C:\Users\Himel Mahmud\.gradle\caches\9.5.0\transforms\0990968446d8aacb679abd943253eee4\transformed\firebase-auth-23.1.0\AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-firestore:25.1.1] C:\Users\Himel Mahmud\.gradle\caches\9.5.0\transforms\d284aaf3c58b8d6b4ec91a8ba511d33e\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:10:5-79

@@ -49,7 +49,6 @@ id btnAddContact
 id btnAddNumber
 id btnAddTime
 id btnAdminBack
-id btnAdminEnter
 id btnAdminPanel
 id btnBack
 id btnBox1
@@ -82,7 +81,6 @@ id btnViewBiggerMap
 id cardRoot
 id chipGroupTimes
 id emptyState
-id etAdminPassword
 id etConfirmPassword
 id etContactName
 id etContactPhone

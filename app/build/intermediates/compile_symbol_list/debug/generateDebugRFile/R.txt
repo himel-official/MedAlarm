@@ -48,7 +48,6 @@ int id btnAddContact 0x0
 int id btnAddNumber 0x0
 int id btnAddTime 0x0
 int id btnAdminBack 0x0
-int id btnAdminEnter 0x0
 int id btnAdminPanel 0x0
 int id btnBack 0x0
 int id btnBox1 0x0
@@ -81,7 +80,6 @@ int id btnViewBiggerMap 0x0
 int id cardRoot 0x0
 int id chipGroupTimes 0x0
 int id emptyState 0x0
-int id etAdminPassword 0x0
 int id etConfirmPassword 0x0
 int id etContactName 0x0
 int id etContactPhone 0x0
